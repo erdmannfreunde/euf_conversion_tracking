@@ -60,6 +60,7 @@ class ModuleConversionTracking extends \Module
 
 			return $objTemplate->parse();
 		}
-		
+
+    return parent::generate();
 	}
 }
