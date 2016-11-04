@@ -1,0 +1,35 @@
+{
+  "name": "erdmannfreunde/euf_conversion_tracking",
+  "description": "Contao Extension to add conversion tracking codes, such as from google adwords or facebook to a specific page.",
+  "keywords": ["contao", "conversion tracking", "google adwords", "facebook pixel", "google anayltics"],
+  "type": "contao-module",
+  "homepage": "https://github.com/ErdmannFreunde/euf_conversion_tracking",
+  "license": "GPL-3.0+",
+	"authors":[
+		{
+			"name":"Erdmann & Freunde // Dennis Erdmann",
+			"homepage":"http://erdmann-freunde.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+  	"email": "moin@erdmann-freunde.de",
+		"issues":"https://github.com/ErdmannFreunde/euf_conversion_tracking/issues",
+		"source":"https://github.com/ErdmannFreunde/euf_conversion_tracking"
+	},
+	"require": {
+    "php": ">=5.3",
+    "contao/core-bundle": ">=3.5,<=3.5.9999",
+    "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*"
+  },
+  "replace": {
+    "contao-legacy/euf_conversion_tracking": "self.version"
+  },
+	"extra": {
+    "contao": {
+      "sources": {
+        "": "system/modules/euf_conversion_tracking"
+      }
+    }
+  }
+}
