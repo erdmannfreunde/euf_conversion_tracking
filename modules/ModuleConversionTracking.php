@@ -33,10 +33,10 @@ class ModuleConversionTracking extends \Module
 		// Script in <head> or before </body>
 		switch ($this->conversion_tracking_placement) {
 			case 'start':
-				$GLOBALS['TL_HEAD'][] = $this->conversion_tracking_html;
+				$GLOBALS['TL_HEAD'][] = \Controller::replaceInsertTags($this->conversion_tracking_html, false);
 				break;
 			case 'end':
-				$GLOBALS['TL_BODY'][] = $this->conversion_tracking_html;
+				$GLOBALS['TL_BODY'][] = \Controller::replaceInsertTags($this->conversion_tracking_html, false);
 				break;
 		}
 	}
