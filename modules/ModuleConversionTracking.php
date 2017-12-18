@@ -41,7 +41,7 @@ class ModuleConversionTracking extends \Module
 		}
 	}
    /**
-	 * Do not show the module if no calendar has been selected
+	 * 
 	 *
 	 * @return string
 	 */
