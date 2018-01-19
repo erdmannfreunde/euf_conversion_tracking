@@ -4,7 +4,7 @@
   "keywords": ["contao", "conversion tracking", "google adwords", "facebook pixel", "google anayltics"],
   "type": "contao-module",
   "homepage": "https://github.com/ErdmannFreunde/euf_conversion_tracking",
-  "license": "GPL-3.0+",
+  "license": "GPL-3.0-or-later",
 	"authors":[
 		{
 			"name":"Erdmann & Freunde // Dennis Erdmann",
@@ -19,7 +19,7 @@
 	},
 	"require": {
     "php": ">=5.3",
-    "contao/core-bundle": ">=3.5,<=3.5.9999",
+    "contao/core-bundle": "~3.5 || ~4.1",
     "contao-community-alliance/composer-plugin":"^2.3.0 || 3.*"
   },
   "replace": {
